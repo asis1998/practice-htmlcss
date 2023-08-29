@@ -1,0 +1,186 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+:root{
+  --text-color:black;
+
+  --darkmode-text-color:white;
+
+}
+hr{
+  width: 100%;
+}
+
+/* hero section  */
+.wrapper{
+  position: relative;
+}
+input{
+  display: none;
+}
+.wrapper label{
+  z-index: 1;
+  position: fixed;
+  top:100px;
+  left: 60px;
+}
+.global{
+  position: relative;
+
+}
+.global video{
+  object-fit:cover
+
+}
+
+.hero{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(189, 218, 226, 0.257);
+  color: var(--text-color);
+  border: none;
+padding: 20px 60px;
+  border-radius: 10px;
+  top: 40vh;
+  left: 35vw;
+ 
+
+}
+
+/* header   */
+
+.header{
+  position: sticky;
+ top: 1px;
+
+height: 80px;
+z-index: 5;
+  
+
+background: url(./assets/wave-haikei.png); 
+
+}
+.header .main{
+ 
+  display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.header .left{
+  
+  width: 50%;
+}
+.header .container .right{
+ 
+  width: 50%;
+
+}
+.right ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right ul li{
+  list-style: none;
+  
+}
+.right ul li:hover{
+
+  transform: scale(1.3);
+}
+.right ul li a{
+  text-decoration: none;
+  color:var(--text-color);
+  font-size: 20px;
+}
+.right ul li a:hover{
+  color: red;
+  transition: all 1.5s;
+ 
+}
+.logo i{
+  color:blue;
+  background:white;
+  padding: 20px 20px;
+  border-radius: 50%;
+  font-size: 40px;
+}
+
+#darkmode:checked + .wrapper{
+  --text-color:var(--darkmode-text-color);
+}
+
+/* PARALLAX   */
+
+.parallax .img{
+  background: url(./assets/beach-1751455_1280.jpg) no-repeat center;
+  
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+}
+.parallax .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.parallax .img h2{
+  letter-spacing: 1rem;
+  background: rgba(118, 118, 147, 0.492);
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+/* grid  */
+
+.grid{
+  position: relative;
+background:white;
+display: grid;
+grid-template-columns: 1fr 5fr;
+gap: 3px;
+
+}
+
+.left1>div{
+  position: sticky;
+top: 90px;
+  z-index: 7;
+
+ 
+  background: green;
+ 
+  
+}
+.left1 i{
+  display: flex;
+  justify-content: left;
+  margin-left: 40px;
+}
+.left1 ul{
+  display: flex;
+  justify-content: left;
+  text-align: left;
+ 
+  flex-direction: column;
+  list-style: none;
+}
+
+.right1{
+background: purple;
+margin-left: 50px;
+}
